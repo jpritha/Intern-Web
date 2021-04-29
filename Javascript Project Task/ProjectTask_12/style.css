@@ -3,35 +3,33 @@ html, body {
     padding: 0;
   }
   
-  header {
+header {
     background-color: #333333;
+    position: fixed;
     width: 100%;
   }
 
   
-/* Page content */
+/* Page content
 .content {
     padding: 16px;
   }
   
   /* The sticky class is added to the header with JS when it reaches its scroll position */
-  .sticky {
+  /* .sticky {
     position: fixed;
     top: 0;
     width: 100%
-  }
+  } */
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
+  /* .sticky + .content {
     padding-top: 102px;
-  }
-  
+  } */
+   */
   nav {
     margin: 0;
     padding: 20px 0;
-    display:flex;
-    flex-direction: row;
-    width: 80px;
   }
   
   nav li {
@@ -39,12 +37,16 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 12px;
-    width: 100%;
-
+    width: 80px;
+    display: inline;
+    padding-left: 10px;
   }
   
   main {
     text-align: center;
+    position: relative;
+    z-index: -1;
+    offset: 80px;
   }
   
   main h1 {
@@ -62,6 +64,9 @@ html, body {
     background-color: #333;
     color: #fff;
     padding: 30px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
   
   footer p {
@@ -112,11 +117,16 @@ html, body {
   .supporting {
     padding-top: 80px;
     padding-bottom: 100px;
+    margin-bottom: 50px;
+   
   }
   
   .supporting .col {
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
   }
   
   .supporting img {

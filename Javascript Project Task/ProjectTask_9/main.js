@@ -1,6 +1,6 @@
 let registered = false;
 var runner_age= 50
-let raceNumber = Math.floor(Math.random() * 1000);
+let racenumber = Math.floor(Math.random() * 1000);
 
 
 if(runner_age>=18 && registered===true){
